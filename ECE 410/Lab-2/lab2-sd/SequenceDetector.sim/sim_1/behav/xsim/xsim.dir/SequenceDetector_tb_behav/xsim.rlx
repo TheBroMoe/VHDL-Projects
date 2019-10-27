@@ -1,6 +1,6 @@
 
 { 
-    crc :  1188247560360710034  , 
+    crc :  14164571385659075006  , 
     ccp_crc :  0  , 
     cmdline : " -wto e0f80984267e45ceb01fc3c37a02204c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SequenceDetector_tb_behav xil_defaultlib.SequenceDetector_tb" , 
     buildDate : "May 24 2019" , 

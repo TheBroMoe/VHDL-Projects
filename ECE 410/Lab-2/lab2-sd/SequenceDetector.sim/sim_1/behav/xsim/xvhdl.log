@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.srcs/sim_1/new/SequenceDetector_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'SequenceDetector_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.srcs/sources_1/new/SequenceDetector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SequenceDetector'

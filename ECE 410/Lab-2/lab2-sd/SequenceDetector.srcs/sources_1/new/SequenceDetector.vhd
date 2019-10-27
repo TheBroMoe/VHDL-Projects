@@ -39,7 +39,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity SequenceDetector is
     Port ( 
             clk     : in STD_LOGIC:='0';
-            Data_In : in STD_LOGIC;              --swt(0) as Data_In
+            Data_In : in STD_LOGIC_VECTOR(1 DOWNTO 0);              --swt(0) as Data_In
             Clk_Btn : in STD_LOGIC;              --btn(0) used as clock
             sw      : in STD_LOGIC_VECTOR(3 DOWNTO 0);
             led6_r  : out STD_LOGIC;
@@ -60,10 +60,17 @@ component clock_divider
     
 end component;
 
+signal counter : std_logic_vector (3 downto 0);
+-- 00, 01, 10, and 11 representing A, T, C, and G, respectively
+signal A : std_logic_vector (1 downto 0) := "00";
+signal T : std_logic_vector (1 downto 0) := "01";
+signal C : std_logic_vector (1 downto 0) := "10";
+signal G : std_logic_vector (1 downto 0) := "11";
+
 begin
     clk_div: component clock_divider port map(clk=>clk, reset=>'0', clk_out=>clk_auto);
     
-    SequenceDetector0: -- '1010011'
+    SequenceDetector0: -- 'ATTCGC'
     process (clk_auto)
     begin
         if clk_auto'event and clk_auto='1' then
@@ -77,63 +84,65 @@ begin
 --        if Clk_Btn'event and Clk_Btn='1' then
             case state is
                 when S0=> 
-                          if Data_In='1' then
+                          if Data_In=A then
                              next_state<=S1;
                           else
                              next_state<=S0;
-                             led6_r<='0';
                           end if;
                           led<="0000";
+                          led6_r <= '0';
                 when S1=> 
-                          if Data_In='0' then
+                          if Data_In=T then
                                next_state<=S2;
                           else
                                next_state<=S1;
                           end if;
+                          led6_r <= '0';
                           led<="0001";
                 when S2=> 
-                          if Data_In='1' then
+                          if Data_In=T then
                              next_state<=S3;
+                          elsif Data_In=A then
+                            next_state <= S1;
                           else
                              next_state<=S0;
                           end if;
                           led<="0010";
                 when S3=> 
-                          if Data_In='0' then
+                          if Data_In= C then
                              next_state<=S4;
-                          else
+                          elsif Data_In=A then
                              next_state<=S1;
+                          else
+                            next_state<=S0;
                           end if;
                           led<="0011";
                 when S4=> 
-                          if Data_In='0' then
+                          if Data_In=G then
                              next_state<=S5;
+                          elsif Data_In = A then
+                             next_state<=S1;
                           else
-                             next_state<=S3;
+                            next_state<=S0;
                           end if;
                           led<="0100";
                 when S5=>
-                          if Data_In='1' then
+                          if Data_In=C then
                              next_state<=S6;
+                          elsif Data_In = A then
+                             next_state<=S1;
                           else
-                             next_state<=S0;
+                            next_state<=S0;
                           end if;
                           led<="0101";
                 when S6=>
-                          if Data_In='1' then
-                             next_state<=S7;
-                          else
-                             next_state<=S2;
-                          end if;
-                          led<="0110";
-               when S7=>
-                          if Data_In='1' then
+                          if Data_In=A then
                              next_state<=S1;
                           else
                              next_state<=S0;
-                          end if;     
+                          end if;
                           led6_r <= '1';
-                          led<="0111";
+                          led<="0110";
                 when others=>
                           next_state<=S0;
             end case;

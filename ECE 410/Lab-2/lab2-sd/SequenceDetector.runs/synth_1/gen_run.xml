@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1571860715">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1572212681">
   <File Type="PA-TCL" Name="SequenceDetector.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SequenceDetector_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SequenceDetector_reports.tcl"/>
   <File Type="RDS-RDS" Name="SequenceDetector.vds"/>
   <File Type="RDS-UTIL" Name="SequenceDetector_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="SequenceDetector_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SequenceDetector.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SequenceDetector_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SequenceDetector_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../../Downloads/Lab1-GenNBit-eClass/Lab1-GenNBit.srcs/sources_1/imports/new/clock_divider.vhd">
+    <File Path="$PSRCDIR/sources_1/new/SequenceDetector.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/SequenceDetector.vhd">
+    <File Path="$PPRDIR/../../../../../Downloads/Lab1-GenNBit-eClass/Lab1-GenNBit.srcs/sources_1/imports/new/clock_divider.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

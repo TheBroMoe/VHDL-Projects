@@ -43,7 +43,7 @@ component SequenceDetector is
     Port
     (
         clk     : in STD_LOGIC;
-        Data_In : in STD_LOGIC;              --swt(0) as Data_In
+        Data_In : in STD_LOGIC_Vector(1 DOWNTO 0);              --swt(0) as Data_In
         Clk_Btn : in STD_LOGIC;              --btn(0) used as clock
         sw      : in STD_LOGIC_VECTOR(3 DOWNTO 0);
         led6_r  : out STD_LOGIC;
@@ -57,8 +57,9 @@ component clock_divider is
            clk_out : out STD_LOGIC);
 end component;
 
-signal clk,Data_In,Clk_Btn, clk_out: STD_LOGIC;
+signal clk,Clk_Btn, clk_out: STD_LOGIC;
 signal led6_r: STD_LOGIC;
+signal Data_In: STD_LOGIC_VECTOR(1 DOWNTO 0);
 signal led: STD_LOGIC_VECTOR(3 DOWNTO 0);
 signal sw: STD_LOGIC_VECTOR(3 DOWNTO 0);
 
@@ -109,33 +110,54 @@ begin
 --        Data_In<='1';           --Data bit='0'
 --        wait for 3 ns;
 
-    --Sequence "1010011"    
-        Data_In<='1';           --Data bit='1'
+--    --Sequence "1010011"    
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
+
+
+--        Data_In<='0';           --Data bit='0'
+--        wait for 3 ns;
+
+
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
+
+--        Data_In<='0';           --Data bit='0'
+--        wait for 3 ns;
+
+--        Data_In<='0';           --Data bit='0'
+--        wait for 3 ns;
+
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
+
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
+
+--        Data_In<='0';           --Data bit='0' (Go to S0)
+--        wait for 3 ns;
+        
+--Sequence "ATTCGC"    
+        Data_In<="00";           -- A
         wait for 3 ns;
 
-
-        Data_In<='0';           --Data bit='0'
+        Data_In<="01";           -- T
         wait for 3 ns;
 
-
-        Data_In<='1';           --Data bit='1'
+        Data_In<="01";           -- T
         wait for 3 ns;
-
-        Data_In<='0';           --Data bit='0'
+        
+        Data_In<="10";           -- C
         wait for 3 ns;
-
-        Data_In<='0';           --Data bit='0'
+        
+        Data_In<="11";           -- G
         wait for 3 ns;
-
-        Data_In<='1';           --Data bit='1'
+        
+        Data_In<="10";           -- C
         wait for 3 ns;
-
-        Data_In<='1';           --Data bit='1'
+        
+        Data_In<="00";           -- A (Go to S1)
         wait for 3 ns;
-
-        Data_In<='0';           --Data bit='0' (Go to S0)
-        wait for 3 ns;
-
         
     end process;
     

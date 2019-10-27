@@ -18,3 +18,15 @@ run all
 relaunch_sim
 relaunch_sim
 synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+launch_simulation
+source SequenceDetector_tb.tcl
+close_sim
+launch_simulation
+source SequenceDetector_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+refresh_design
+close_sim
