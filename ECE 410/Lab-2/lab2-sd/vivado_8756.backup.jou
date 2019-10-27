@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 12 16:07:35 2018
+# Process ID: 8756
+# Current directory: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10024 C:\Users\softgalaxy\Documents\Vivado\labmanuals\lab2-sd\SequenceDetector.xpr
+# Log file: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/vivado.log
+# Journal file: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/SN:10054D251499-PN:0}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210351A77C0BA}
+set_property PROGRAM.FILE {C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.runs/impl_1/SequenceDetector.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.runs/impl_1/SequenceDetector.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+close_project
+open_project C:/Users/softgalaxy/Documents/Vivado/labs/lab1-fa-FFPGA/half_adder.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr
+update_compile_order -fileset sources_1

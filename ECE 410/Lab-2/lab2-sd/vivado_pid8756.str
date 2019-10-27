@@ -1,0 +1,417 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 8756
+License: Customer
+
+Current time: 	Tue Jun 12 16:08:02 MDT 2018
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 355 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	softgalaxy
+User home directory: C:/Users/softgalaxy
+User working directory: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/softgalaxy/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/softgalaxy/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/softgalaxy/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/vivado.log
+Vivado journal file location: 	C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/vivado.jou
+Engine tmp dir: 	C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/.Xil/Vivado-8756-softgalaxy-PC
+
+GUI allocated memory:	166 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 576 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 33 MB (+32003kb) [00:00:09]
+// [Engine Memory]: 433 MB (+302471kb) [00:00:09]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\softgalaxy\Documents\Vivado\labmanuals\lab2-sd\SequenceDetector.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr 
+// [GUI Memory]: 70 MB (+37009kb) [00:00:15]
+// [Engine Memory]: 564 MB (+114533kb) [00:00:15]
+// Tcl Message: open_project C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/softgalaxy/Documents/Vivado/labs/lab2-sd' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 88 MB (+15296kb) [00:00:18]
+// [Engine Memory]: 620 MB (+29424kb) [00:00:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 43 MB. Current time: 6/12/18 4:08:07 PM MDT
+// Project name: SequenceDetector; location: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd; part: xc7z010clg400-1
+// [Engine Memory]: 656 MB (+5547kb) [00:00:22]
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 853.836 ; gain = 124.879 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ch)
+// PAPropertyPanels.initPanels (SequenceDetector.vhd) elapsed time: 0.8s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SequenceDetector(Behavioral) (SequenceDetector.vhd)]", 1, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SequenceDetector(Behavioral) (SequenceDetector.vhd)]", 1, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("SequenceDetector.vhd", 497, 259); // cd (w, ch)
+// Elapsed time: 26 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ch)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bv (ch):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bv (ch)
+// bv (ch):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.1   **** Build date : Apr  4 2018-19:32:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 860.070 ; gain = 0.535 
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/SN:10054D251499-PN:0 
+// Tcl Message: ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/SN:10054D251499-PN:0. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-register this hardware target. 
+// Tcl Message: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.  
+// a (ch): Critical Messages: addNotify
+dismissDialog("Auto Connect"); // bv (ch)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210351A77C0BA (0) ; Closed", 2, "xilinx_tcf/Digilent/210351A77C0BA (0)", 0, false); // t (O, ch)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210351A77C0BA (0) ; Closed", 2, "xilinx_tcf/Digilent/210351A77C0BA (0)", 0, false, false, false, false, true, false); // t (O, ch) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET, "Open Target"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET
+selectButton("PAResourceOtoP.OpenTarget_OK_TO_CLOSE_CURRENTLY_OPEN_TARGET_OK", "OK"); // JButton (A, G)
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: close_hw_target {localhost:3121/xilinx_tcf/Digilent/SN:10054D251499-PN:0} 
+// Tcl Message: INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/SN:10054D251499-PN:0 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// bv (ch):  Open Target : addNotify
+// Tcl Message: open_hw_target {localhost:3121/xilinx_tcf/Digilent/210351A77C0BA} 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A77C0BA 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// [Engine Memory]: 1,263 MB (+601667kb) [00:01:26]
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1451.520 ; gain = 591.449 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.runs/impl_1/SequenceDetector.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Open Target"); // bv (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,281 MB. GUI used memory: 48 MB. Current time: 6/12/18 4:09:14 PM MDT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// [Engine Memory]: 1,350 MB (+24807kb) [00:01:29]
+selectMenuItem((HResource) null, "xc7z010_1"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ch): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bv (ch):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ch)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.runs/impl_1/SequenceDetector.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bv (ch)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 622 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ch): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Close Project"); // A (ch)
+// bv (ch):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,350 MB. GUI used memory: 44 MB. Current time: 6/12/18 4:19:45 PM MDT
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bv (ch)
+// Elapsed time: 126 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 81 seconds
+setFileChooser("C:/Users/softgalaxy/Documents/Vivado/labs/lab1-fa-FFPGA/half_adder.xpr");
+// Opening Vivado Project: C:/Users/softgalaxy/Documents/Vivado/labs/lab1-fa-FFPGA/half_adder.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/softgalaxy/Documents/Vivado/labs/lab1-fa-FFPGA/half_adder.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// Project name: half_adder; location: C:/Users/softgalaxy/Documents/Vivado/labs/lab1-fa-FFPGA; part: xc7z010clg400-1
+// 'i' command handler elapsed time: 84 seconds
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ch)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_adder(RTL) (full_adder.vhd)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_adder(RTL) (full_adder.vhd)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_adder(RTL) (full_adder.vhd)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_adder(RTL) (full_adder.vhd)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, full_adder(RTL) (full_adder.vhd)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// [GUI Memory]: 93 MB (+635kb) [00:15:42]
+selectCodeEditor("full_adder.vhd", 583, 371); // cd (w, ch)
+// Elapsed time: 253 seconds
+selectCodeEditor("full_adder.vhd", 487, 417); // cd (w, ch)
+// Elapsed time: 79 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ch): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 78 MB. Current time: 6/12/18 4:29:07 PM MDT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bv (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 92 seconds
+dismissFileChooser();
+// 'i' command handler elapsed time: 92 seconds
+// Elapsed time: 1517 seconds
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr", 1); // q (O, ch)
+// Opening Vivado Project: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd/SequenceDetector.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/softgalaxy/Documents/Vivado/labs/lab2-sd' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// Project name: SequenceDetector; location: C:/Users/softgalaxy/Documents/Vivado/labmanuals/lab2-sd; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SequenceDetector(Behavioral) (SequenceDetector.vhd)]", 1, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SequenceDetector(Behavioral) (SequenceDetector.vhd)]", 1, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("SequenceDetector.vhd", 441, 240); // cd (w, ch)
+// Elapsed time: 39 seconds
+selectCodeEditor("SequenceDetector.vhd", 613, 203); // cd (w, ch)
+// [GUI Memory]: 98 MB (+311kb) [00:49:44]
+// Elapsed time: 76 seconds
+selectCodeEditor("SequenceDetector.vhd", 295, 247); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 52 MB. Current time: 6/12/18 4:59:10 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 5:29:10 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 5:59:11 PM MDT
+// [GUI Memory]: 104 MB (+1657kb) [01:56:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 48 MB. Current time: 6/12/18 6:29:11 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 48 MB. Current time: 6/12/18 6:59:11 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 7:29:12 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 7:59:12 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 8:29:12 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 8:59:13 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 9:29:13 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/12/18 9:59:13 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 10:29:14 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 10:59:14 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 11:29:15 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/12/18 11:59:15 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 12:29:15 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 12:59:16 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 1:29:16 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 1:59:16 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 2:29:17 AM MDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 2:59:17 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 3:29:17 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 3:59:18 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 4:29:18 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 4:59:19 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 5:29:19 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 5:59:19 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 6:29:20 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 6:59:20 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 7:29:20 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 7:59:21 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 8:29:21 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 8:59:21 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 9:29:22 AM MDT
+// Elapsed time: 59850 seconds
+selectCodeEditor("SequenceDetector.vhd", 532, 238); // cd (w, ch)
+// Elapsed time: 10 seconds
+selectCodeEditor("SequenceDetector.vhd", 543, 191); // cd (w, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 4, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 4, false, false, false, false, false, true); // B (D, ch) - Double Click
+selectCodeEditor("Zybo-Z7-Master.xdc", 436, 120); // cd (w, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SequenceDetector.vhd", 1); // k (j, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SequenceDetector_tb(Behavioral) (SequenceDetector_tb.vhd)]", 7, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SequenceDetector_tb(Behavioral) (SequenceDetector_tb.vhd)]", 7, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectCodeEditor("SequenceDetector_tb.vhd", 653, 339); // cd (w, ch)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Zybo-Z7-Master.xdc", 2); // k (j, ch)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SequenceDetector.vhd", 1); // k (j, ch)
+selectCodeEditor("SequenceDetector.vhd", 472, 213); // cd (w, ch)
+selectCodeEditor("SequenceDetector.vhd", 418, 237); // cd (w, ch)
+selectCodeEditor("SequenceDetector.vhd", 418, 243); // cd (w, ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 9:59:22 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 10:29:23 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 10:59:23 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 11:29:23 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 11:59:24 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 12:29:24 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 12:59:24 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 1:29:25 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 1:59:25 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 49 MB. Current time: 6/13/18 2:29:25 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 2:59:26 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 3:29:26 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 3:59:26 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 4:29:27 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 4:59:27 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 5:29:28 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 5:59:28 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 6:29:28 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 6:59:29 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 7:29:29 PM MDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 7:59:29 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 8:29:30 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 8:59:30 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 9:29:30 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 9:59:31 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 10:29:31 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 10:59:31 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 11:29:32 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/13/18 11:59:32 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 12:29:33 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 12:59:33 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 1:29:33 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 1:59:34 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 2:29:34 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,403 MB. GUI used memory: 50 MB. Current time: 6/14/18 2:59:34 AM MDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
