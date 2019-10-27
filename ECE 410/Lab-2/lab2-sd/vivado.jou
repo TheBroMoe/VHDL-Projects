@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 27 14:26:18 2019
+# Process ID: 17260
+# Current directory: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3476 C:\Users\moham_000\Documents\GitHub\VHDL-Projects\ECE 410\Lab-2\lab2-sd\SequenceDetector.xpr
+# Log file: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/vivado.log
+# Journal file: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source SequenceDetector_tb.tcl
+run all
+relaunch_sim
+relaunch_sim
+synth_design -rtl -name rtl_1

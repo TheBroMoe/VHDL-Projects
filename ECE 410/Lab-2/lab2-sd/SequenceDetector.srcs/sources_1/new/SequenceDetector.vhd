@@ -49,7 +49,7 @@ end SequenceDetector;
 
 architecture Behavioral of SequenceDetector is
 
-TYPE STATES IS (S0,S1,S2,S3,S4,S5,S6);
+TYPE STATES IS (S0,S1,S2,S3,S4,S5,S6, S7);
 signal state, next_state: STATES;
 signal clk_auto: STD_LOGIC:='0';
 
@@ -63,7 +63,7 @@ end component;
 begin
     clk_div: component clock_divider port map(clk=>clk, reset=>'0', clk_out=>clk_auto);
     
-    SequenceDetector0: -- '01101'
+    SequenceDetector0: -- '1010011'
     process (clk_auto)
     begin
         if clk_auto'event and clk_auto='1' then
@@ -83,32 +83,57 @@ begin
                              next_state<=S0;
                              led6_r<='0';
                           end if;
-                          led<="0001";
+                          led<="0000";
                 when S1=> 
-                          if Data_In='1' then
+                          if Data_In='0' then
                                next_state<=S2;
                           else
-                               next_state<=S0;
+                               next_state<=S1;
                           end if;
-                          led<="0010";
+                          led<="0001";
                 when S2=> 
-                          if Data_In='0' then
+                          if Data_In='1' then
                              next_state<=S3;
                           else
                              next_state<=S0;
                           end if;
-                          led<="0011";
+                          led<="0010";
                 when S3=> 
-                          if Data_In='1' then
+                          if Data_In='0' then
                              next_state<=S4;
+                          else
+                             next_state<=S1;
+                          end if;
+                          led<="0011";
+                when S4=> 
+                          if Data_In='0' then
+                             next_state<=S5;
+                          else
+                             next_state<=S3;
+                          end if;
+                          led<="0100";
+                when S5=>
+                          if Data_In='1' then
+                             next_state<=S6;
                           else
                              next_state<=S0;
                           end if;
-                          led<="0100";
-                when S4=> 
-                          led6_r<='1';
-                          led<="0010";
-                          next_state<=S2;
+                          led<="0101";
+                when S6=>
+                          if Data_In='1' then
+                             next_state<=S7;
+                          else
+                             next_state<=S2;
+                          end if;
+                          led<="0110";
+               when S7=>
+                          if Data_In='1' then
+                             next_state<=S1;
+                          else
+                             next_state<=S0;
+                          end if;     
+                          led6_r <= '1';
+                          led<="0111";
                 when others=>
                           next_state<=S0;
             end case;

@@ -94,36 +94,22 @@ begin
     begin
     --Sequence "01101"    
         wait for 1.5ns;
-        Data_In<='0';           --Data bit='0'
-        wait for 3 ns;
+--        Data_In<='0';           --Data bit='0'
+--        wait for 3 ns;
 
-        Data_In<='1';           --Data bit='1'
-        wait for 3 ns;
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
         
-        Data_In<='1';           --Data bit='1'
-        wait for 3 ns;
+--        Data_In<='1';           --Data bit='1'
+--        wait for 3 ns;
 
-        Data_In<='0';           --Data bit='0'
-        wait for 3 ns;
+--        Data_In<='0';           --Data bit='0'
+--        wait for 3 ns;
 
-        Data_In<='1';           --Data bit='0'
-        wait for 3 ns;
+--        Data_In<='1';           --Data bit='0'
+--        wait for 3 ns;
 
-    --Sequence "0101101"    
-        Data_In<='0';           --Data bit='0'
-        wait for 3 ns;
-
-
-        Data_In<='1';           --Data bit='1'
-        wait for 3 ns;
-
-
-        Data_In<='0';           --Data bit='0'
-        wait for 3 ns;
-
-        Data_In<='1';           --Data bit='1'
-        wait for 3 ns;
-
+    --Sequence "1010011"    
         Data_In<='1';           --Data bit='1'
         wait for 3 ns;
 
@@ -135,7 +121,20 @@ begin
         Data_In<='1';           --Data bit='1'
         wait for 3 ns;
 
+        Data_In<='0';           --Data bit='0'
+        wait for 3 ns;
 
+        Data_In<='0';           --Data bit='0'
+        wait for 3 ns;
+
+        Data_In<='1';           --Data bit='1'
+        wait for 3 ns;
+
+        Data_In<='1';           --Data bit='1'
+        wait for 3 ns;
+
+        Data_In<='0';           --Data bit='0' (Go to S0)
+        wait for 3 ns;
 
         
     end process;

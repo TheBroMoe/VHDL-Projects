@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Webtalk v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Oct 23 13:43:58 2019
-# Process ID: 4552
-# Current directory: C:/Users/kebbi/Documents/410/Lab 2/lab2-sd/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/kebbi/Documents/410/Lab 2/lab2-sd/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim/xsim.dir/SequenceDetector_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/kebbi/Documents/410/Lab 2/lab2-sd/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/kebbi/Documents/410/Lab 2/lab2-sd/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 27 15:08:46 2019
+# Process ID: 6672
+# Current directory: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim/xsim.dir/SequenceDetector_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE 410/Lab-2/lab2-sd/SequenceDetector.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/kebbi/Documents/410/Lab -notrace
-couldn't read file "C:/Users/kebbi/Documents/410/Lab": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Wed Oct 23 13:43:58 2019...
+source C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE -notrace
+couldn't read file "C:/Users/moham_000/Documents/GitHub/VHDL-Projects/ECE": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 27 15:08:46 2019...
